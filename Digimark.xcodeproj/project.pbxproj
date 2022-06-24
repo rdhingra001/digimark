@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1D174B228661A4E00971B41 /* BackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B128661A4E00971B41 /* BackupView.swift */; };
+		D1D174B628662A7000971B41 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B528662A7000971B41 /* SignInView.swift */; };
+		D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B728662AE800971B41 /* WelcomeView.swift */; };
+		D1D174BA2866334300971B41 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B92866334300971B41 /* SignUpView.swift */; };
 		D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E552865103A00125B63 /* DigimarkApp.swift */; };
 		D1F69E582865103A00125B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E572865103A00125B63 /* ContentView.swift */; };
 		D1F69E5A2865103E00125B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F69E592865103E00125B63 /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1D174B128661A4E00971B41 /* BackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupView.swift; sourceTree = "<group>"; };
+		D1D174B528662A7000971B41 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		D1D174B728662AE800971B41 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D1D174B92866334300971B41 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		D1F69E522865103A00125B63 /* Digimark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digimark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F69E552865103A00125B63 /* DigimarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimarkApp.swift; sourceTree = "<group>"; };
 		D1F69E572865103A00125B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1D174B428662A4C00971B41 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D1D174B528662A7000971B41 /* SignInView.swift */,
+				D1D174B728662AE800971B41 /* WelcomeView.swift */,
+				D1D174B92866334300971B41 /* SignUpView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		D1F69E492865103A00125B63 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D1F69E652865521D00125B63 /* Digimark.entitlements */,
-				D1F69E6428654F9A00125B63 /* Views */,
 				D1F69E572865103A00125B63 /* ContentView.swift */,
-				D1F69E6328654F9000125B63 /* Logic */,
+				D1F69E6428654F9A00125B63 /* Views */,
 				D1F69E552865103A00125B63 /* DigimarkApp.swift */,
 				D1F69E592865103E00125B63 /* Assets.xcassets */,
 				D1F69E5B2865103E00125B63 /* Preview Content */,
@@ -97,6 +114,9 @@
 		D1F69E6428654F9A00125B63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1D174B428662A4C00971B41 /* Authentication */,
+				D1D174B128661A4E00971B41 /* BackupView.swift */,
+				D1F69E6328654F9000125B63 /* Logic */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,9 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D174B228661A4E00971B41 /* BackupView.swift in Sources */,
+				D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */,
 				D1F69E582865103A00125B63 /* ContentView.swift in Sources */,
+				D1D174BA2866334300971B41 /* SignUpView.swift in Sources */,
 				D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */,
 				D1F69E67286555D400125B63 /* Constants.swift in Sources */,
+				D1D174B628662A7000971B41 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,11 +341,14 @@
 				DEVELOPMENT_TEAM = G5RHMXS494;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,11 +375,14 @@
 				DEVELOPMENT_TEAM = G5RHMXS494;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
