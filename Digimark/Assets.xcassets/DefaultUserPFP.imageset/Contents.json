@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "apple copy.pdf",
+      "filename" : "user 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,11 +12,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Apple_logo_white 1.png",
+      "filename" : "user 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "user 1-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -27,10 +28,12 @@
           "value" : "dark"
         }
       ],
+      "filename" : "user 2-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "user 1-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -41,6 +44,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "user 2-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
