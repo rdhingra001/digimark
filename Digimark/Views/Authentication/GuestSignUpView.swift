@@ -1,13 +1,13 @@
 //
-//  SignUpView.swift
+//  GuestSignUpView.swift
 //  Digimark
 //
-//  Created by Ronit Dhingra on 6/24/22.
+//  Created by Ronit Dhingra on 6/25/22.
 //
 
 import SwiftUI
 
-struct SignUpView: View {
+struct GuestSignUpView: View {
     @Environment(\.colorScheme) var colorScheme
     
     @State private var firstName: String = ""
@@ -70,8 +70,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct GuestSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        GuestSignUpView()
     }
 }

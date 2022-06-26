@@ -9,6 +9,9 @@ import SwiftUI
 
 
 struct WelcomeView: View {
+    @EnvironmentObject var appState: AppState
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -18,7 +21,7 @@ struct WelcomeView: View {
                     ZStack {
                         Image(uiImage: #imageLiteral(resourceName: "OpeningGraphic"))
                             .resizable()
-                            .frame(width: UIScreen.main.bounds.width / 1.25, height: UIScreen.main.bounds.height / 3.5)
+                            .frame(width: getRect().width / 1.25, height: getRect().height / 3.5)
                     }
                     Spacer()
                     NavigationLink(destination: SignUpView()) {
@@ -38,14 +41,29 @@ struct WelcomeView: View {
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(.white)
+                            .background(Color("SecondaryBackground"))
                             .border(Color("PrimaryColor"), width: 4, cornerRadius: 50.0)
                             .cornerRadius(50.0)
                             .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
                             .foregroundColor(Color("PrimaryColor"))
                             .padding(.vertical)
                     }
-                    Spacer()
+                    HStack {
+                        Text("Want to try out the app first?")
+                            .font(.callout)
+                            .foregroundColor(colorScheme == .light ? .black.opacity(0.6) : .white.opacity(0.7))
+                        Button {
+                            appState.isGuest = true
+                        } label: {
+                            Text("Try it out")
+                                .foregroundColor(Color("PrimaryColor"))
+                                .font(.callout)
+                                .fontWeight(.bold)
+                        }
+                        .fullScreenCover(isPresented: $appState.isGuest, content: {
+                            NotesMenuView()
+                        })
+                    }
                 }
                 .padding()
             }

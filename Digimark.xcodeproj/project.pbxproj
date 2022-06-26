@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1D174B228661A4E00971B41 /* BackupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B128661A4E00971B41 /* BackupView.swift */; };
+		D11CBCBE28664C8900E6F6DB /* NotesMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CBCBD28664C8900E6F6DB /* NotesMenuView.swift */; };
+		D11CBCC028666B3300E6F6DB /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CBCBF28666B3300E6F6DB /* AuthenticateView.swift */; };
+		D11CBCC328669ED100E6F6DB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CBCC228669ED100E6F6DB /* AccountView.swift */; };
 		D1D174B628662A7000971B41 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B528662A7000971B41 /* SignInView.swift */; };
 		D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B728662AE800971B41 /* WelcomeView.swift */; };
 		D1D174BA2866334300971B41 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B92866334300971B41 /* SignUpView.swift */; };
+		D1EEE01B2867B51D00C1B874 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */; };
+		D1F41AC528675AE40083384B /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC428675AE40083384B /* CreateNoteView.swift */; };
+		D1F41AC728677EFC0083384B /* GuestSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC628677EFC0083384B /* GuestSignInView.swift */; };
+		D1F41AC928677F070083384B /* GuestSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC828677F070083384B /* GuestSignUpView.swift */; };
+		D1F41ACC28677FB60083384B /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41ACB28677FB60083384B /* CaptureView.swift */; };
+		D1F41AD62867AF120083384B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AD52867AF120083384B /* Camera.swift */; };
 		D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E552865103A00125B63 /* DigimarkApp.swift */; };
 		D1F69E582865103A00125B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E572865103A00125B63 /* ContentView.swift */; };
 		D1F69E5A2865103E00125B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F69E592865103E00125B63 /* Assets.xcassets */; };
@@ -25,10 +33,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D1D174B128661A4E00971B41 /* BackupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupView.swift; sourceTree = "<group>"; };
+		D11CBCBD28664C8900E6F6DB /* NotesMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMenuView.swift; sourceTree = "<group>"; };
+		D11CBCBF28666B3300E6F6DB /* AuthenticateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		D11CBCC228669ED100E6F6DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		D1D174B528662A7000971B41 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D1D174B728662AE800971B41 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D1D174B92866334300971B41 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		D1F41AC428675AE40083384B /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
+		D1F41AC628677EFC0083384B /* GuestSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignInView.swift; sourceTree = "<group>"; };
+		D1F41AC828677F070083384B /* GuestSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignUpView.swift; sourceTree = "<group>"; };
+		D1F41ACB28677FB60083384B /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		D1F41AD52867AF120083384B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		D1F69E522865103A00125B63 /* Digimark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digimark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F69E552865103A00125B63 /* DigimarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimarkApp.swift; sourceTree = "<group>"; };
 		D1F69E572865103A00125B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,14 +71,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11CBCBB28664C1F00E6F6DB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D1F69E572865103A00125B63 /* ContentView.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D11CBCBC28664C3300E6F6DB /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D1F41ACA28677FA40083384B /* Creation */,
+				D11CBCBD28664C8900E6F6DB /* NotesMenuView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		D11CBCC128669EC300E6F6DB /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D11CBCC228669ED100E6F6DB /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		D1D174B428662A4C00971B41 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				D1D174B528662A7000971B41 /* SignInView.swift */,
 				D1D174B728662AE800971B41 /* WelcomeView.swift */,
 				D1D174B92866334300971B41 /* SignUpView.swift */,
+				D11CBCBF28666B3300E6F6DB /* AuthenticateView.swift */,
+				D1F41AC628677EFC0083384B /* GuestSignInView.swift */,
+				D1F41AC828677F070083384B /* GuestSignUpView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D1EEE01C2867D30800C1B874 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		D1F41ACA28677FA40083384B /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				D1EEE01C2867D30800C1B874 /* Capture */,
+				D1F41AC428675AE40083384B /* CreateNoteView.swift */,
+				D1F41ACB28677FB60083384B /* CaptureView.swift */,
+				D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		D1F41ACD2867800E0083384B /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D1F41AD0286780250083384B /* Creation */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		D1F41ACE286780160083384B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D1F41ACF2867801D0083384B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D1F41AD0286780250083384B /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				D1F41AD52867AF120083384B /* Camera.swift */,
+			);
+			path = Creation;
 			sourceTree = "<group>";
 		};
 		D1F69E492865103A00125B63 = {
@@ -86,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				D1F69E652865521D00125B63 /* Digimark.entitlements */,
-				D1F69E572865103A00125B63 /* ContentView.swift */,
 				D1F69E6428654F9A00125B63 /* Views */,
 				D1F69E552865103A00125B63 /* DigimarkApp.swift */,
 				D1F69E592865103E00125B63 /* Assets.xcassets */,
@@ -106,6 +197,9 @@
 		D1F69E6328654F9000125B63 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				D1F41ACF2867801D0083384B /* Authentication */,
+				D1F41ACE286780160083384B /* Account */,
+				D1F41ACD2867800E0083384B /* Notes */,
 				D1F69E66286555D400125B63 /* Constants.swift */,
 			);
 			path = Logic;
@@ -114,8 +208,10 @@
 		D1F69E6428654F9A00125B63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D11CBCC128669EC300E6F6DB /* Account */,
+				D11CBCBC28664C3300E6F6DB /* Notes */,
+				D11CBCBB28664C1F00E6F6DB /* Base */,
 				D1D174B428662A4C00971B41 /* Authentication */,
-				D1D174B128661A4E00971B41 /* BackupView.swift */,
 				D1F69E6328654F9000125B63 /* Logic */,
 			);
 			path = Views;
@@ -202,13 +298,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D174B228661A4E00971B41 /* BackupView.swift in Sources */,
+				D1EEE01B2867B51D00C1B874 /* CameraPreview.swift in Sources */,
 				D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */,
 				D1F69E582865103A00125B63 /* ContentView.swift in Sources */,
+				D1F41AC728677EFC0083384B /* GuestSignInView.swift in Sources */,
+				D1F41ACC28677FB60083384B /* CaptureView.swift in Sources */,
 				D1D174BA2866334300971B41 /* SignUpView.swift in Sources */,
 				D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */,
+				D1F41AC928677F070083384B /* GuestSignUpView.swift in Sources */,
+				D11CBCC028666B3300E6F6DB /* AuthenticateView.swift in Sources */,
 				D1F69E67286555D400125B63 /* Constants.swift in Sources */,
+				D11CBCC328669ED100E6F6DB /* AccountView.swift in Sources */,
 				D1D174B628662A7000971B41 /* SignInView.swift in Sources */,
+				D1F41AC528675AE40083384B /* CreateNoteView.swift in Sources */,
+				D1F41AD62867AF120083384B /* Camera.swift in Sources */,
+				D11CBCBE28664C8900E6F6DB /* NotesMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,13 +446,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs the camera so that you can scan your notes into the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,13 +481,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs the camera so that you can scan your notes into the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

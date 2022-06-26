@@ -1,13 +1,13 @@
 //
-//  SignInView.swift
+//  GuestSignInView.swift
 //  Digimark
 //
-//  Created by Ronit Dhingra on 6/24/22.
+//  Created by Ronit Dhingra on 6/25/22.
 //
 
 import SwiftUI
 
-struct SignInView: View {
+struct GuestSignInView: View {
     @Environment(\.colorScheme) var colorScheme
     
     @State private var email: String = ""
@@ -63,34 +63,8 @@ struct SignInView: View {
     }
 }
 
-struct SocialLoginButton: View {
-    @Environment(\.colorScheme) var colorScheme
-    
-    var imageStr: String
-    var title: String
-    var body: some View {
-        HStack {
-            Image(uiImage: #imageLiteral(resourceName: imageStr))
-                .resizable()
-                //.frame(width: getRect().width/15, height: getRect().height/30)
-                .frame(width: imageStr == "apple" && colorScheme == .light ? getRect().width / 17 : getRect().width / 15, height: getRect().height/30)
-                .padding(.horizontal)
-            Spacer()
-            Text(title)
-            Spacer()
-        }
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(Color("SecondaryBackground"))
-        .cornerRadius(50.0)
-        .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
-    }
-}
-
-struct SignInView_Previews: PreviewProvider {
+struct GuestSignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
-            
-            
+        GuestSignInView()
     }
 }

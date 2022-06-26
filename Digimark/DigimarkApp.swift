@@ -8,6 +8,20 @@
 import SwiftUI
 import FirebaseCore
 
+// Define observable
+class AppState: ObservableObject {
+    @Published var isAuthenticated: Bool
+    @Published var isGuest: Bool
+    @Published var isCreatingNote: Bool
+    
+    init(isAuthenticated: Bool, isGuest: Bool, isCreatingNote: Bool) {
+        self.isAuthenticated = isAuthenticated
+        self.isGuest = isGuest
+        self.isCreatingNote = isCreatingNote
+    }
+}
+
+
 @main
 struct DigimarkApp: App {
     
@@ -15,9 +29,12 @@ struct DigimarkApp: App {
         FirebaseApp.configure()
     }
     
+    @ObservedObject var appState = AppState(isAuthenticated: false, isGuest: false, isCreatingNote: false)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
+                .environmentObject(appState)
         }
     }
 }
