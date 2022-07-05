@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct CaptureView: View {
-    @StateObject var camera = Camera()
+struct OldCaptureView: View {
+    @StateObject var camera = OldCamera()
     @State var outputImage: UIImage?
     
     @Environment(\.presentationMode) private var presentationMode
@@ -96,8 +96,8 @@ struct CaptureView: View {
     }
 }
 
-struct CaptureView_Previews: PreviewProvider {
+struct OldCaptureView_Previews: PreviewProvider {
     static var previews: some View {
-        CaptureView()
+        OldCaptureView()
     }
 }

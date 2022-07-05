@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct CameraPreview: UIViewRepresentable {
-    @ObservedObject var camera: Camera
+    @ObservedObject var camera: OldCamera
     
     func makeUIView(context: Context) -> some UIView {
         let view = UIView(frame: getRect())

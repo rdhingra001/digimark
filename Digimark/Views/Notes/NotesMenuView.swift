@@ -11,22 +11,61 @@ struct NotesMenuView: View {
     @EnvironmentObject var appState: AppState
     @Environment(\.colorScheme) var colorScheme
     
+    @State private var guestAttemptNote: Bool = false
+    
+    @State private var notes: [ScanData] = []
+    
+    init() {
+        UITableView.appearance().backgroundColor = Color("BackgroundColor").ignoresSafeArea() as? UIColor
+    }
+    
     var body: some View {
         TabView {
             NavigationView {
                 ZStack {
                     Color("BackgroundColor").ignoresSafeArea()
                     VStack {
-                        Spacer()
-                        Text("Oh no! You should get your notes in!\nCreate your first note by pressing the + icon")
-                            .navigationTitle("Notes")
-                            .foregroundColor(colorScheme == .light ? .black.opacity(0.4) : .white.opacity(0.5))
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                        if appState.isGuest {
-                            GuestWarningView()
+                        if notes.count > 0 {
+                            ZStack {
+                                List {
+                                    if colorScheme == .dark {
+                                        ForEach(notes) { note in
+                                            NavigationLink(
+                                                destination: ScrollView { Text(note.content) },
+                                                label: {
+                                                    Text(note.content).lineLimit(1)
+                                                }
+                                            )
+                                        }
+                                        .listRowBackground(Color("SecondaryBackground").ignoresSafeArea())
+                                    }
+                                    else {
+                                        ForEach(notes) { note in
+                                            NavigationLink(
+                                                destination: ScrollView { Text(note.content) },
+                                                label: {
+                                                    Text(note.content).lineLimit(1)
+                                                }
+                                            )
+                                        }
+                                    }
+                                }
+                                .shadow(color: Color.black.opacity(0.1), radius: 60, x: 0.0, y: 16)
+                                
+                            }
+                            .padding(.top, 5)
+                        }
+                        else {
                             Spacer()
+                            Text("Oh no! You should get your notes in!\nCreate your first note by pressing the + icon")
+                                .foregroundColor(colorScheme == .light ? .black.opacity(0.4) : .white.opacity(0.5))
+                                .multilineTextAlignment(.center)
+                            
+                            Spacer()
+                            if appState.isGuest {
+                                GuestWarningView()
+                                Spacer()
+                            }
                         }
                     }
                     .toolbar {
@@ -38,9 +77,10 @@ struct NotesMenuView: View {
                             Label("Create", systemImage: "plus.circle.fill")
                         }
                         .fullScreenCover(isPresented: $appState.isCreatingNote, content: {
-                            CaptureView()
+                            makeCaptureView()
                         })
                     }
+                    .navigationTitle("Notes")
                 }
             }
             .tabItem {
@@ -61,13 +101,25 @@ struct NotesMenuView: View {
             }
         }
     }
+    
+    private func makeCaptureView() -> CaptureView {
+        CaptureView { textPerPage in
+            if let output = textPerPage?.joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines) {
+                let newScanData = ScanData(content: output)
+                self.appState.tempNote = newScanData
+                self.appState.isCreatingNote = false
+                self.appState.isFinalizingNote = true
+//                self.notes.append(newScanData)
+            }
+        }
+    }
 }
 
 struct NotesMenuView_Previews: PreviewProvider {
     static var previews: some View {
         NotesMenuView()
             .preferredColorScheme(.dark)
-            .environmentObject(AppState(isAuthenticated: false, isGuest: true, isCreatingNote: false))
+            .environmentObject(AppState(isAuthenticated: false, isGuest: true, isCreatingNote: false, isFinalizingNote: false, tempNote: nil))
     }
 }
 

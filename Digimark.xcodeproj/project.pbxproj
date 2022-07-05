@@ -14,11 +14,14 @@
 		D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B728662AE800971B41 /* WelcomeView.swift */; };
 		D1D174BA2866334300971B41 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D174B92866334300971B41 /* SignUpView.swift */; };
 		D1EEE01B2867B51D00C1B874 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */; };
+		D1EEE01E2867FA7700C1B874 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE01D2867FA7700C1B874 /* ScanData.swift */; };
+		D1EEE0202867FC5200C1B874 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE01F2867FC5200C1B874 /* CaptureView.swift */; };
+		D1EEE0222867FE3200C1B874 /* TextRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE0212867FE3200C1B874 /* TextRecognition.swift */; };
 		D1F41AC528675AE40083384B /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC428675AE40083384B /* CreateNoteView.swift */; };
 		D1F41AC728677EFC0083384B /* GuestSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC628677EFC0083384B /* GuestSignInView.swift */; };
 		D1F41AC928677F070083384B /* GuestSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AC828677F070083384B /* GuestSignUpView.swift */; };
-		D1F41ACC28677FB60083384B /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41ACB28677FB60083384B /* CaptureView.swift */; };
-		D1F41AD62867AF120083384B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AD52867AF120083384B /* Camera.swift */; };
+		D1F41ACC28677FB60083384B /* OldCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41ACB28677FB60083384B /* OldCaptureView.swift */; };
+		D1F41AD62867AF120083384B /* OldCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F41AD52867AF120083384B /* OldCamera.swift */; };
 		D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E552865103A00125B63 /* DigimarkApp.swift */; };
 		D1F69E582865103A00125B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F69E572865103A00125B63 /* ContentView.swift */; };
 		D1F69E5A2865103E00125B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F69E592865103E00125B63 /* Assets.xcassets */; };
@@ -40,11 +43,14 @@
 		D1D174B728662AE800971B41 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D1D174B92866334300971B41 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		D1EEE01D2867FA7700C1B874 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		D1EEE01F2867FC5200C1B874 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		D1EEE0212867FE3200C1B874 /* TextRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognition.swift; sourceTree = "<group>"; };
 		D1F41AC428675AE40083384B /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		D1F41AC628677EFC0083384B /* GuestSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignInView.swift; sourceTree = "<group>"; };
 		D1F41AC828677F070083384B /* GuestSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignUpView.swift; sourceTree = "<group>"; };
-		D1F41ACB28677FB60083384B /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
-		D1F41AD52867AF120083384B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		D1F41ACB28677FB60083384B /* OldCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCaptureView.swift; sourceTree = "<group>"; };
+		D1F41AD52867AF120083384B /* OldCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCamera.swift; sourceTree = "<group>"; };
 		D1F69E522865103A00125B63 /* Digimark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Digimark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F69E552865103A00125B63 /* DigimarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimarkApp.swift; sourceTree = "<group>"; };
 		D1F69E572865103A00125B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 		D1EEE01C2867D30800C1B874 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				D1EEE01F2867FC5200C1B874 /* CaptureView.swift */,
 			);
 			path = Capture;
 			sourceTree = "<group>";
@@ -121,7 +128,7 @@
 			children = (
 				D1EEE01C2867D30800C1B874 /* Capture */,
 				D1F41AC428675AE40083384B /* CreateNoteView.swift */,
-				D1F41ACB28677FB60083384B /* CaptureView.swift */,
+				D1F41ACB28677FB60083384B /* OldCaptureView.swift */,
 				D1EEE01A2867B51D00C1B874 /* CameraPreview.swift */,
 			);
 			path = Creation;
@@ -152,7 +159,9 @@
 		D1F41AD0286780250083384B /* Creation */ = {
 			isa = PBXGroup;
 			children = (
-				D1F41AD52867AF120083384B /* Camera.swift */,
+				D1F41AD52867AF120083384B /* OldCamera.swift */,
+				D1EEE01D2867FA7700C1B874 /* ScanData.swift */,
+				D1EEE0212867FE3200C1B874 /* TextRecognition.swift */,
 			);
 			path = Creation;
 			sourceTree = "<group>";
@@ -302,16 +311,19 @@
 				D1D174B828662AE800971B41 /* WelcomeView.swift in Sources */,
 				D1F69E582865103A00125B63 /* ContentView.swift in Sources */,
 				D1F41AC728677EFC0083384B /* GuestSignInView.swift in Sources */,
-				D1F41ACC28677FB60083384B /* CaptureView.swift in Sources */,
+				D1F41ACC28677FB60083384B /* OldCaptureView.swift in Sources */,
 				D1D174BA2866334300971B41 /* SignUpView.swift in Sources */,
+				D1EEE0202867FC5200C1B874 /* CaptureView.swift in Sources */,
 				D1F69E562865103A00125B63 /* DigimarkApp.swift in Sources */,
 				D1F41AC928677F070083384B /* GuestSignUpView.swift in Sources */,
+				D1EEE01E2867FA7700C1B874 /* ScanData.swift in Sources */,
 				D11CBCC028666B3300E6F6DB /* AuthenticateView.swift in Sources */,
 				D1F69E67286555D400125B63 /* Constants.swift in Sources */,
 				D11CBCC328669ED100E6F6DB /* AccountView.swift in Sources */,
 				D1D174B628662A7000971B41 /* SignInView.swift in Sources */,
 				D1F41AC528675AE40083384B /* CreateNoteView.swift in Sources */,
-				D1F41AD62867AF120083384B /* Camera.swift in Sources */,
+				D1F41AD62867AF120083384B /* OldCamera.swift in Sources */,
+				D1EEE0222867FE3200C1B874 /* TextRecognition.swift in Sources */,
 				D11CBCBE28664C8900E6F6DB /* NotesMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

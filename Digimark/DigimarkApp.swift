@@ -13,14 +13,17 @@ class AppState: ObservableObject {
     @Published var isAuthenticated: Bool
     @Published var isGuest: Bool
     @Published var isCreatingNote: Bool
+    @Published var isFinalizingNote: Bool
+    @Published var tempNote: ScanData?
     
-    init(isAuthenticated: Bool, isGuest: Bool, isCreatingNote: Bool) {
+    init(isAuthenticated: Bool, isGuest: Bool, isCreatingNote: Bool, isFinalizingNote: Bool, tempNote: ScanData?) {
         self.isAuthenticated = isAuthenticated
         self.isGuest = isGuest
         self.isCreatingNote = isCreatingNote
+        self.isFinalizingNote = isFinalizingNote
+        self.tempNote = tempNote
     }
 }
-
 
 @main
 struct DigimarkApp: App {
@@ -29,7 +32,7 @@ struct DigimarkApp: App {
         FirebaseApp.configure()
     }
     
-    @ObservedObject var appState = AppState(isAuthenticated: false, isGuest: false, isCreatingNote: false)
+    @ObservedObject var appState = AppState(isAuthenticated: false, isGuest: false, isCreatingNote: false, isFinalizingNote: false, tempNote: nil)
     
     var body: some Scene {
         WindowGroup {
